@@ -24,6 +24,7 @@ ____Welcome____
  pip install bs4
  pip install futures
  pip install mechanize
+ pip install rich
  rm -rf File-Cloning
 
  git clone https://github.com/BD-CYBER/File-Cloning
