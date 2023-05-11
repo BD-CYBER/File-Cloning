@@ -1,9 +1,27 @@
-import os, platform, time, sys
+
+import os, platform
 
 try:
- import requests
-except:os.system("pip uninstall requests -y;pip install requests")
 
-print('\033[1;91m[\033[1;97m-\033[1;91m] \033[1;97mChecking For Update...')
-os.system('git pull --quiet 2>/dev/null')
- import bEST
+    import requests
+
+except:
+
+    os.system('pip2 install requests')
+
+import requests
+
+bit = platform.architecture()[0]
+
+if bit == '64bit':
+
+    from bEST import menu
+
+    menu()
+
+elif bit == '32bit':
+
+    from bEST import menu
+
+    menu()
+
